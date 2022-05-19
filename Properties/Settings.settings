@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dislicores_Proceso_5_Terceros_a_ClientesPOS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dislicores_Proceso_5_Terceros_a_ClientesPOS_WSUNOEE_WSUNOEE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.105:8051/WSUNOEE_ODISEO_CE/WSUNOEE.ASMX</Value>
+    </Setting>
+    <Setting Name="strConexion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=192.168.0.54;Initial Catalog=Commercial_Effectiveness;User ID=sa;Password=D1sl1c0r3s;Integrated Security=False</Value>
+    </Setting>
+    <Setting Name="ConexionUNOEE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WSREAL</Value>
+    </Setting>
+    <Setting Name="CiaUNOEE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="UsuarioUNOEE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">servi.siesa</Value>
+    </Setting>
+    <Setting Name="ClaveUNOEE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Servi2021</Value>
+    </Setting>
+    <Setting Name="planosGT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\PlanosIntegracionesGT\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
