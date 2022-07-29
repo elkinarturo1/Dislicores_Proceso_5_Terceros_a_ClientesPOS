@@ -50,5 +50,39 @@ namespace Dislicores_Proceso_5_Terceros_a_ClientesPOS.Modulos
 
         }
 
+        public static void sp_Proceso_5_Log_Guardar(bool bitError,string detalle, string idTercero= "", string resultadoUNOEE = "",string datosEnviados = "")
+        {
+            SqlConnection conexionSQL = new SqlConnection(Properties.Settings.Default.strConexion);
+            SqlCommand comandoSQL = new SqlCommand();
+
+            comandoSQL.CommandTimeout = 0;
+            comandoSQL.Connection = conexionSQL;
+            comandoSQL.CommandType = CommandType.StoredProcedure;
+            comandoSQL.CommandText = "sp_Proceso_5_Log_Guardar";
+
+            try
+            {
+
+                comandoSQL.Parameters.AddWithValue("@idTercero", idTercero);
+                comandoSQL.Parameters.AddWithValue("@bitError", bitError);
+                comandoSQL.Parameters.AddWithValue("@resultadoUNOEE", resultadoUNOEE);            
+                comandoSQL.Parameters.AddWithValue("@detalle", detalle);
+                comandoSQL.Parameters.AddWithValue("@datosEnviados", datosEnviados);
+
+                comandoSQL.Connection.Open();
+                comandoSQL.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                comandoSQL.Connection.Close();
+            }
+
+        }
+
     }
 }
